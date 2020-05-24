@@ -3,3 +3,36 @@
 @tailwind components;
 /*! purgecss end ignore */
 @tailwind utilities;
+
+body {
+    color: #3D3D3D;
+}
+
+.font-sans {
+    font-family: 'Josefin Sans';
+}
+
+.hello-homepage {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.loading {
+    color: rgba(237, 242, 247, 1);
+    animation: alertPulse 1s ease-in;
+    animation-iteration-count: infinite;
+    background-color: rgba(237, 242, 247, 1);
+}
+
+.loading-dark {
+    color: rgba(226, 232, 240, 1);
+}
+
+@-webkit-keyframes alertPulse {
+    0% {background-color: #edf2f7; opacity: 1;}
+    50% {opacity: #edf2f7; opacity: 0.2; }
+    100% {opacity: #edf2f7; opacity: 1;}
+}
