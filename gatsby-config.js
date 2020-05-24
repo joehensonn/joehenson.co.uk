@@ -5,9 +5,9 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`,
+    title: `Joe Henson`,
+    description: `A brief overview of me and my work`,
+    author: `@joehenson`,
   },
   plugins: [
     `gatsby-plugin-eslint`,
@@ -36,6 +36,23 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-source-rest-api',
+      options: {
+        endpoints: [
+          'https://ancient-fjord-66964.herokuapp.com/spotify/getRecentTrack',
+          'https://ancient-fjord-66964.herokuapp.com/spotify/getRecentTracks',
+        ],
+      },
+    },
     `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Josefin Sans']
+        }
+      }
+    }
   ],
 };
