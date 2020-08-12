@@ -8,7 +8,6 @@ import '../utilities/fontawesome'
 
 import EngineShedLogo from "../images/es-logo.png";
 import SUMSLogo from "../images/sums-logo.png";
-import ChemtrixLogo from "../images/chemtrix-logo.png";
 import BargeLogo from "../images/thebarge-logo.png";
 import StudentOrdersLogo from "../images/student-orders-logo.png";
 
@@ -20,7 +19,7 @@ function WorkPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`Joe Henson`, `Henson`, `Design`, `Development`]}
         title="Work"
       />
 
@@ -35,23 +34,6 @@ function WorkPage() {
       </section>
 
       <section className="projects mt-10">
-
-        <div className="each bg-gray-200 rounded-lg mt-5 mb-2">
-            <h2>
-                <a className="project-link justify-content-center" href="https://chemtrix.com" target="_blank" rel="noopener noreferrer">
-                <img
-                    alt="Words"
-                    className="w-24"
-                    src={ChemtrixLogo}
-                />
-                </a>
-            </h2>
-            <div><p className="text-gray-700">One of my biggest projects. Using my own custom CMS to manage any customer facing content</p></div>
-            <div className="buttons text-gray-600">
-                <FontAwesomeIcon icon="code" size="lg" className="mb-4" />
-                <FontAwesomeIcon icon="paint-brush" size="lg" />
-            </div>
-        </div>
 
         <div className="each">
             <h2>
