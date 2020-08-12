@@ -34,6 +34,10 @@ a:hover {
     background: linear-gradient(transparent 35%,rgb(226, 232, 240) 0);
 }
 
+.projects a:hover {
+    background: transparent !important;
+}
+
 .font-sans {
     font-family: 'Josefin Sans';
 }
