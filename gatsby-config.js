@@ -36,15 +36,6 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: 'gatsby-source-rest-api',
-      options: {
-        endpoints: [
-          'https://ancient-fjord-66964.herokuapp.com/spotify/getRecentTrack',
-          'https://ancient-fjord-66964.herokuapp.com/spotify/getRecentTracks',
-        ],
-      },
-    },
     `gatsby-plugin-offline`,
     {
       resolve: 'gatsby-plugin-web-font-loader',
