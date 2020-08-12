@@ -14,9 +14,20 @@ function Header() {
     }
   `);
 
+  const navItems = [
+    {
+      route: `/about`,
+      title: `About`,
+    },
+    {
+      route: `/work`,
+      title: `Work`,
+    },
+  ];
+
   return (
-    <header className="text-gray-800">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl px-16 py-8 mx-auto md:p-8">
+    <header className="container mx-auto px-16 md:px-0 text-gray-800">
+      <div className="flex flex-wrap items-center justify-between max-w-4xl py-8 mx-auto md:p-10">
         <Link to="/">
           <img
             alt={site.siteMetadata.title}
@@ -44,23 +55,15 @@ function Header() {
             isExpanded ? `block` : `hidden`
           } md:block md:flex md:items-center w-full md:w-auto`}
         >
-          {[
-            {
-              route: `/about`,
-              title: `About`,
-            },
-            {
-              route: `/work`,
-              title: `Work`,
-            },
-          ].map((link) => (
-            <Link
-              className="hover:bg-gray-200 p-3 rounded-lg block mt-4 no-underline md:inline-block md:mt-0 md:ml-6"
-              key={link.title}
-              to={link.route}
-            >
-              {link.title}
-            </Link>
+          {navItems.map((link) => (
+            <div className="p-3 text-center sm:text-left md:text-left lg:text-left" key={link.title}>
+              <Link
+                className="main-nav-hover hover:text-black mt-4 no-underline md:inline-block md:mt-0 md:ml-6"
+                to={link.route}
+              >
+                {link.title}
+              </Link>
+            </div>
           ))}
         </nav>
       </div>

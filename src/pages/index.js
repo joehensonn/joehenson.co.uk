@@ -9,14 +9,14 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO
-          keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-          title="Home"
+          keywords={[`joe henson`, `henson`, `development`, `developer`]}
+          title="Portfolio"
         />
 
         <section>
-          <div className="hello-homepage">
-            <h1 className="text-5xl font-bold">Hi, I&apos;m Joe 👋🏻</h1>
-            <p className="text-2xl font-normal text-gray-700 pt-2">Software Developer & Freelance Digital Designer</p>
+          <div className="hello-homepage flex-wrap object-contain">
+            <h1 className="text-4xl md:text-5xl font-bold">Hi, I&apos;m Joe 👋🏻</h1>
+            <p className="text-xl md:text-2xl font-normal text-gray-700 pt-1">Software Developer & Freelance Digital Designer</p>
 
             <CurrentlyListening />
           </div>
