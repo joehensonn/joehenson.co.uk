@@ -40,7 +40,7 @@ function WorkPage() {
                 <a className="project-link justify-content-center" href="https://engineshed.co.uk" target="_blank" rel="noopener noreferrer">
                 <img
                     alt="Words"
-                    className="w-24"
+                    className="work-image"
                     src={EngineShedLogo}
                 />
                 </a>
@@ -57,7 +57,7 @@ function WorkPage() {
                 <a className="project-link justify-content-center" href="https://sums.su" target="_blank" rel="noopener noreferrer">
                 <img
                     alt="Words"
-                    className="w-24"
+                    className="work-image"
                     src={SUMSLogo}
                 />
                 </a>
@@ -74,7 +74,7 @@ function WorkPage() {
                 <a className="project-link justify-content-center" href="https://thebargelincoln.co.uk" target="_blank" rel="noopener noreferrer">
                 <img
                     alt="Words"
-                    className="w-24"
+                    className="work-image"
                     src={BargeLogo}
                 />
                 </a>
@@ -91,7 +91,7 @@ function WorkPage() {
                 <a className="project-link justify-content-center" href="https://studentorders.co.uk" target="_blank" rel="noopener noreferrer">
                 <img
                     alt="Words"
-                    className="w-24"
+                    className="work-image"
                     src={StudentOrdersLogo}
                 />
                 </a>
@@ -118,7 +118,7 @@ function WorkPage() {
                 <a className="project-link justify-content-center" href="https://github.com/joehensonn/jhp-framework" target="_blank" rel="noopener noreferrer">
                 <img
                     alt="Words"
-                    className="w-24"
+                    className="work-image"
                     src={JHPLogo}
                 />
                 </a>
@@ -134,7 +134,7 @@ function WorkPage() {
                 <a className="project-link justify-content-center">
                 <img
                     alt="Words"
-                    className="w-24"
+                    className="work-image"
                     src={CumulusLogo}
                 />
                 </a>
@@ -150,7 +150,7 @@ function WorkPage() {
                 <a className="project-link justify-content-center">
                 <img
                     alt="Words"
-                    className="w-24"
+                    className="work-image"
                     src={CulinaryCraftLogo}
                 />
                 </a>

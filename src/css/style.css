@@ -46,6 +46,11 @@ a:hover {
     margin-top: 10%
 }
 
+.work-image {
+    width: 70%;
+    height: 70%;
+}
+
 .loading {
     color: rgba(237, 242, 247, 1);
     animation: alertPulse 1s ease-in;
