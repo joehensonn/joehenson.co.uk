@@ -44,6 +44,7 @@ module.exports = {
           families: ['Josefin Sans']
         }
       }
-    }
+    },
+    `gatsby-plugin-favicon`,
   ],
 };
