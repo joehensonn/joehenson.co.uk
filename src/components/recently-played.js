@@ -10,7 +10,7 @@ class RecentlyPlayed extends React.Component {
 
   componentDidMount() {
     const proxyurl = "https://cors-anywhere.herokuapp.com/";
-    const url = "https://ancient-fjord-66964.herokuapp.com/spotify/getRecentTracks?limit=9";
+    const url = "http://api.joehenson.co.uk/music/top-songs?period=1month&limit=10";
 
     console.log(proxyurl + url);
     fetch(proxyurl + url)
@@ -36,7 +36,7 @@ class RecentlyPlayed extends React.Component {
             {loading ? <p className="bg-gray-200 rounded-lg p-4 text-lg pt-3 mt-3">Loading...</p> : ''}
             <ul className="list-disc m-3 ml-10 text-xl">
                 {fetchedData.map(song => (
-                    <li className="pb-4" key={song.id}>{song.song_name} - <strong>{song.artist}</strong></li>
+                    <li className="pb-4" key={song.mbid}>{song.name} - <strong>{song.artist.name}</strong></li>
                 ))}
             </ul>
         </div>
