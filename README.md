@@ -2,6 +2,8 @@
 
 Codebase for my personal website which is built using [Gatsby](https://www.gatsbyjs.com/), a React-based framework for building static sites.
 
+Gatsby's a great tool for building super fast sites, and granted my site doesn't have a whole load of content, run a lighthouse report and look at those stats 😉
+
 The site also references [me as an API](https://github.com/joehensonn/me).
 
 **Installation/Setup**
