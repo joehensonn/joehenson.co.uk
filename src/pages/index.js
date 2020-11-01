@@ -14,7 +14,7 @@ class IndexPage extends React.Component {
         />
 
         <section>
-          <div className="hello-homepage flex-wrap object-contain">
+          <div className="flex-wrap object-contain">
             <h1 className="text-4xl md:text-5xl font-bold">Hi, I&apos;m Joe 👋🏻</h1>
             <p className="text-xl md:text-2xl font-normal text-gray-700 pt-1">Software Developer & Freelance Digital Designer</p>
 

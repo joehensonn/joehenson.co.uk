@@ -54,7 +54,7 @@ function AboutPage() {
       <section className="pt-10">
         <h3 className="text-3xl font-semibold">Music</h3>
 
-        <p className="text-xl pt-3 pb-3">What I&apos;ve been listening to recently</p>
+        <p className="text-xl pt-3 pb-3">My favourite songs this month</p>
 
         <RecentlyPlayed />
       </section>

@@ -4,158 +4,165 @@
 /*! purgecss end ignore */
 @tailwind utilities;
 
-::-moz-selection { /* Code for Firefox */
-    background: #E2E8EF;
-    border-radius: 8px;
+::-moz-selection {
+  /* Code for Firefox */
+  background: #e2e8ef;
+  border-radius: 8px;
 }
-  
+
 ::selection {
-    background: #E2E8EF;
-    border-radius: 8px;
+  background: #e2e8ef;
+  border-radius: 8px;
 }
 
 body {
-    color: #3D3D3D;
+  color: #3d3d3d;
 }
 
 .custom-primary-color {
-    color: #EE6C4D;
+  color: #ee6c4d;
 }
 
 .main-content {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .main-content a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 a:hover {
-    background: linear-gradient(transparent 35%,rgb(226, 232, 240) 0);
+  background: linear-gradient(transparent 35%, rgb(226, 232, 240) 0);
 }
 
 .projects a:hover {
-    background: transparent !important;
+  background: transparent !important;
 }
 
 .font-sans {
-    font-family: 'Josefin Sans';
-}
-
-.hello-homepage {
-    margin-top: 10%
+  font-family: "Josefin Sans";
 }
 
 .work-image {
-    width: 70%;
-    height: 70%;
+  width: 70%;
+  height: 70%;
 }
 
 .loading {
-    color: rgba(237, 242, 247, 1);
-    animation: alertPulse 1s ease-in;
-    animation-iteration-count: infinite;
-    background-color: rgba(237, 242, 247, 1);
+  color: rgba(237, 242, 247, 1);
+  animation: alertPulse 1s ease-in;
+  animation-iteration-count: infinite;
+  background-color: rgba(237, 242, 247, 1);
 }
 
 .loading-dark {
-    color: rgba(226, 232, 240, 1);
+  color: rgba(226, 232, 240, 1);
 }
 
 @-webkit-keyframes alertPulse {
-    0% {background-color: #edf2f7; opacity: 1;}
-    50% {opacity: #edf2f7; opacity: 0.2; }
-    100% {opacity: #edf2f7; opacity: 1;}
+  0% {
+    background-color: #edf2f7;
+    opacity: 1;
+  }
+  50% {
+    opacity: #edf2f7;
+    opacity: 0.2;
+  }
+  100% {
+    opacity: #edf2f7;
+    opacity: 1;
+  }
 }
 
 .projects .each {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: .3rem 0;
-    border-bottom: 1px solid #eee
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #eee;
 }
 
 .projects h2 {
-    font-size: 1.2rem;
-    border-bottom: none;
-    margin: 0 1rem 0 0;
-    font-weight: 500;
-    color: #111;
-    padding: 0;
-    min-width: 110px;
+  font-size: 1.2rem;
+  border-bottom: none;
+  margin: 0 1rem 0 0;
+  font-weight: 500;
+  color: #111;
+  padding: 0;
+  min-width: 110px;
 }
 
 .projects h2 a {
-    display: flex;
-    color: #111;
-    justify-content: center;
+  display: flex;
+  color: #111;
+  justify-content: center;
 }
 
 .projects h2 .project-icon {
-    display: inline-block;
-    font-size: 2rem;
-    margin-right: 1rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin-right: 1rem;
 }
 
 .projects p {
-    font-weight: 400;
-    margin: 0;
+  font-weight: 400;
+  margin: 0;
 }
 
 .buttons {
-    display: none;
+  display: none;
 }
 
 .buttons-key {
-    display: none;
+  display: none;
 }
 
-.projects a:hover, .projects a {
-    text-decoration: none;
-    background-color: transparent !important;
+.projects a:hover,
+.projects a {
+  text-decoration: none;
+  background-color: transparent !important;
 }
 
 .artwork-visibility {
-    display: none;
+  display: none;
 }
 
 @media (min-width: 620px) {
-    .projects .each {
-        display: flex;
-        justify-content: space-between;
-        padding: 1.5rem 0;
-    }
+  .projects .each {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+  }
 
-    .smaller-project {
-        padding: 0.5rem 0 !important;
-    }
+  .smaller-project {
+    padding: 0.5rem 0 !important;
+  }
 
-    .projects h2 {
-        width: 150px;
-        min-width: 150px;
-        max-width: 150px;
-        font-size: 1.3rem;
-        margin-right: 1rem;
-    }
+  .projects h2 {
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+  }
 
-    .projects p {
-        display: block;
-        flex: 1 1;
-        margin: 0 1.5rem 0 0;
-        font-size: 1.2rem;
-    }
+  .projects p {
+    display: block;
+    flex: 1 1;
+    margin: 0 1.5rem 0 0;
+    font-size: 1.2rem;
+  }
 
-    .buttons {
-        display: block;
-        padding: 20px;
-    }
+  .buttons {
+    display: block;
+    padding: 20px;
+  }
 
-    .buttons-key {
-        display: inline;
-    }
+  .buttons-key {
+    display: inline;
+  }
 
-    .artwork-visibility {
-        display: block;
-    }
+  .artwork-visibility {
+    display: block;
+  }
 }
