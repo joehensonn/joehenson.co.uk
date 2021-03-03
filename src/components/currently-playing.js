@@ -12,10 +12,7 @@ class CurrentlyListening extends React.Component {
   }
 
   componentDidMount() {
-    const proxyurl = "https://cors-anywhere.herokuapp.com/";
-    const url = "http://api.joehenson.co.uk/music/currently-listening";
-    
-    fetch(proxyurl + url)
+    fetch("http://api.joehenson.co.uk/music/currently-listening")
       .then(response => {
         return response.json();
       })
