@@ -12,7 +12,7 @@ class CurrentlyListening extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://api.joehenson.co.uk/music/currently-listening")
+    fetch("https://joehenson-api.herokuapp.com/music/currently-listening")
       .then(response => {
         return response.json();
       })

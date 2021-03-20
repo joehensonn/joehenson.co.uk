@@ -9,7 +9,7 @@ class RecentlyPlayed extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://api.joehenson.co.uk/music/top-songs?period=1month&limit=10")
+    fetch("https://joehenson-api.herokuapp.com/music/top-songs?period=1month&limit=10")
       .then(response => {
         return response.json();
       })
