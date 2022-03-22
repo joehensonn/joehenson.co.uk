@@ -2,6 +2,7 @@ import React from "react";
 import Placeholder from "../images/placeholder.jpg"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import '../utilities/fontawesome'
+import {ME_API} from '../utilities/settings';
 
 class CurrentlyListening extends React.Component {
 
@@ -12,7 +13,7 @@ class CurrentlyListening extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://joehenson-api.herokuapp.com/music/currently-listening")
+    fetch(`${ME_API}/music/currently-listening`)
       .then(response => {
         return response.json();
       })

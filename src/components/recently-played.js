@@ -1,5 +1,5 @@
 import React from "react";
-
+import {ME_API} from '../utilities/settings';
 class RecentlyPlayed extends React.Component {
 
   state = {
@@ -9,7 +9,7 @@ class RecentlyPlayed extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://joehenson-api.herokuapp.com/music/top-songs?period=1month&limit=10")
+    fetch(`${ME_API}/music/top-songs?period=1month&limit=10`)
       .then(response => {
         return response.json();
       })

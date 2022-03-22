@@ -1,0 +1,1 @@
+export const ME_API = window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://joehenson-api.herokuapp.com';
