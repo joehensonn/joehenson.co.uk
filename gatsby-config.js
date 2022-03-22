@@ -50,10 +50,11 @@ module.exports = {
             resolve: "gatsby-plugin-web-font-loader",
             options: {
                 google: {
-                    families: ["Josefin Sans"],
+                    families: ["Josefin Sans", "League Spartan"],
                 },
             },
         },
         `gatsby-plugin-favicon`,
+        `gatsby-plugin-dark-mode`,
     ],
 };
