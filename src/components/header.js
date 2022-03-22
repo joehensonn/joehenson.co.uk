@@ -31,7 +31,7 @@ function Header() {
         <Link to="/">
           <img
             alt={site.siteMetadata.title}
-            className="block w-5"
+            className="block w-6"
             src={logo}
           />
         </Link>
