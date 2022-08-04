@@ -29,10 +29,24 @@ body {
 
 .main-content a {
   text-decoration: underline;
+  text-decoration-color: #06aade;
+}
+
+body .dark > .main-content a {
+  text-decoration-color: #de062e;
 }
 
 a:hover {
-  background: linear-gradient(transparent 35%, rgb(226, 232, 240) 0);
+  background: linear-gradient(transparent, rgba(6,170,222, 0.5) 0);
+}
+
+.no-styling {
+  background: none !important;
+  text-decoration: none !important;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .projects a:hover {
