@@ -55,6 +55,6 @@ module.exports = {
             },
         },
         `gatsby-plugin-favicon`,
-        `gatsby-plugin-dark-mode`,
+        `@skagami/gatsby-plugin-dark-mode`,
     ],
 };
